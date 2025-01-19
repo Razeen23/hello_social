@@ -18,11 +18,17 @@ module.exports = {
     },
     container: {
       center: true,
+      margin: {
+        sm: '0px', // Margin for screens smaller than md (320px)
+        md: '15px', // Margin for md screens (768px)
+        lg: '20px', // Margin for lg screens (960px)
+        xl: '30px', // Margin for xl screens (1200px)
+      },
       padding: {
-        sm: '0px', // Padding for screens smaller than md (320px)
-        md: '30px', // Padding for md screens (768px)
-        lg: '5px', // Padding for lg screens (960px)
-        xl: '5px', // Padding for xl screens (1200px)
+        sm: '0px',
+        md: '3px',
+        lg: '5px',
+        xl: '5px',
       },
       screens: {
         sm: '320px',

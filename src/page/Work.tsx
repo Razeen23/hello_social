@@ -3,7 +3,7 @@ import React from 'react'
 const Work = () => {
   return (
     <>
-    <section className='container min-h-screen items-center justify-center bg-white rounded text-black'>
+    <section className='container min-h-[70vh] items-center justify-center bg-white rounded text-black'>
     <div className='flex p-14'>
         <div className='flex heading'>
             <div className='flex flex-1 flex-col uppercase gap-16 text-6xl font-primary items-start justify-start'>

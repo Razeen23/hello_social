@@ -8,12 +8,13 @@ import Work from '../page/Work';
 import { cn } from "../@/lib/utils";
 import DotPattern from "../@/components/magicui/dot-pattern";
 import BlurFade from "../@/components/magicui/blur-fade";
+import Benefits from '../page/Benefits';
 
 const Home: React.FC = () => {
     return (
         <>
             <section className='min-h-screen flex flex-col items-center justify-center'>
-                <div className='container min-h-[85vh] items-center justify-center flex flex-1'>
+                <div className='container min-h-[65vh] items-center justify-center flex flex-1'>
                     <DotPattern
                         width={20}
                         height={20}
@@ -53,7 +54,7 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container flex flex-1 text-amber-300 items-center justify-between text-5xl font-spl3">
+                <div className="container min-h-[25vh] flex flex-1 text-amber-300 items-center justify-between text-5xl font-spl3">
                     <div className="flex-1 text-center">
                         DESIGN
                     </div>
@@ -70,7 +71,9 @@ const Home: React.FC = () => {
             <TextRevealDemo />
             <Card />
             <About />
+            <Benefits />
             <Work />
+
 
         </>
     );

@@ -9,23 +9,23 @@ const servicesGroup = () => {
   const services = [
     {
       img: img1,
-      header: 'Custom Approach',
-      description: 'We solve real business problems with custom-tailored tech solutions.'
+      header: 'Small Business Owners',
+      description: 'Expand your business online with BlueCards—a simple, professional way to share your services and connect digitally.'
     },
     {
       img: img2,
-      header: 'Data-driven Development',
-      description: 'We create tech products that are data-driven and market-conscious.'
+      header: 'Digital Marketers',
+      description: 'Streamline campaigns by centralizing your social links and services. BlueCards works great as a landing page for maximum impact.'
     },
     {
       img: img3,
-      header: 'Cutting-edge Tech',
-      description: 'Every project at Think To Share is an opportunity for us to chase innovation.'
+      header: 'Influencers',
+      description: 'Showcase your brand, achievements, and content effortlessly. BlueCards is the perfect addition to your social bio.'
     },
     {
       img: img4,
-      header: 'Scalable Solutions',
-      description: 'Our business solutions never stand in the way of your business growth.'
+      header: 'Professionals',
+      description: 'Upgrade from traditional cards to a sleek digital solution. BlueCards represents your expertise with ease and style.'
     },
   ];
 
@@ -45,7 +45,7 @@ export function Card() {
       {services.map((service, index) => (
         <MagicCard
         key={index}
-        className="cursor-pointer flex flex-col text-left items-center justify-center shadow-2xl p-4 whitespace-normal text-3xl overflow-auto"
+        className="cursor-pointer flex flex-col text-left items-center justify-center shadow-2xl p-4 whitespace-normal text-3xl overflow-hidden rounded-xl bg-white/10 dark:bg-black/10"
         gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
       >
         <img src={service.img} className="w-20 h-20 object-cover mb-2" />
