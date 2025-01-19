@@ -9,6 +9,7 @@ import { cn } from "../@/lib/utils";
 import DotPattern from "../@/components/magicui/dot-pattern";
 import BlurFade from "../@/components/magicui/blur-fade";
 import Benefits from '../page/Benefits';
+import { Templates } from '../page/Templates';
 
 
 
@@ -75,6 +76,7 @@ const Home: React.FC = () => {
             <About />
             {/* <Benefits /> */}
             <Work />
+            <Templates />
 
 
 
