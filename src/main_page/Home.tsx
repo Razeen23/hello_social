@@ -10,6 +10,8 @@ import DotPattern from "../@/components/magicui/dot-pattern";
 import BlurFade from "../@/components/magicui/blur-fade";
 import Benefits from '../page/Benefits';
 
+
+
 const Home: React.FC = () => {
     return (
         <>
@@ -71,8 +73,9 @@ const Home: React.FC = () => {
             <TextRevealDemo />
             <Card />
             <About />
-            <Benefits />
+            {/* <Benefits /> */}
             <Work />
+
 
 
         </>

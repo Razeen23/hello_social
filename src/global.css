@@ -66,4 +66,58 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1 {
+    @apply font-primary text-[45px] mb-6 tracking-[10%] uppercase ;
+  }
+
+  h2 {
+    @apply font-secondary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+
+  h3 {
+    @apply font-tertiary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+
+  h4 {
+    @apply font-spl3 font-semibold text-[20px] mb-6 leading-[46px];
+  }
+  p {
+    @apply font-spl3 font-semibold text-[20px] mb-6 leading-[46px];
+  }
+    /* .section {
+    @apply py-9 lg:py-24 lg:h-screen flex items-center;
+  } */
 }
+
+
+
+/* @layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .font1 {
+    font-family: "Rubik Glitch", system-ui;
+    @apply text-[45px] lg:text-[45px] md:text-[30px] sm:text-[20px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] uppercase;
+  }
+  .font2 {
+    font-family: "Space Grotesk", sans-serif;
+    @apply text-[17px] lg:text-[22px] md:text-[17px] sm:text-[15px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] ;
+  }
+  
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+
+} */

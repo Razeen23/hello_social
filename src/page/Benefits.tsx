@@ -1,4 +1,6 @@
 import React from 'react'
+import { AnimatedList } from "../@/components/ui/animated-list"; // Adjust the import path as needed
+
 
 const Work = () => {
   return (
