@@ -39,6 +39,8 @@ export function Card() {
   console.log(theme);
 
   return (
+    <>
+    <h1 className="text-4xl truncate text-amber-300 font-primary font-bold pb-10">Who Needs Digital Visting Card.?</h1>
     <section className="container flex h-[350px] flex-col w-full gap-4 lg:h-[350px] lg:flex-row">
       {services.map((service, index) => (
         <MagicCard
@@ -52,6 +54,7 @@ export function Card() {
       </MagicCard>
       ))}
     </section>
+    </>
   );
 }
 
