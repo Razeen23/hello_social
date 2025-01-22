@@ -11,6 +11,7 @@ import BlurFade from "../@/components/magicui/blur-fade";
 import Benefits from '../page/Benefits';
 import { Templates } from '../page/Templates';
 
+import UseCase from '../page/UseCase';
 
 
 const Home: React.FC = () => {
@@ -72,11 +73,14 @@ const Home: React.FC = () => {
                 </div>
             </section>
             <TextRevealDemo />
-            <Card />
             <About />
-            {/* <Benefits /> */}
+
+            <Card />
+            <UseCase />
+
             <Work />
             <Templates />
+            <Benefits />
 
 
 

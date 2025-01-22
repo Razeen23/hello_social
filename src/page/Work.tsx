@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { AnimatedListDemo } from "../page/AnimatedList";  // Adjust the import path
 
