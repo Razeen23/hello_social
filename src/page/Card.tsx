@@ -10,22 +10,22 @@ const servicesGroup = () => {
     {
       img: img1,
       header: 'Small Business Owners',
-      description: 'Expand your business online with BlueCards—a simple, professional way to share your services and connect digitally.'
+      description: 'Expand your business online with SpotCard—a simple and professional way to share your services and connect digitally.'
     },
     {
       img: img2,
       header: 'Digital Marketers',
-      description: 'Streamline campaigns by centralizing your social links and services. BlueCards works great as a landing page for maximum impact.'
+      description: 'Streamline your campaigns by centralizing social links and services. SpotCard works as a powerful landing page for maximum impact.'
     },
     {
       img: img3,
       header: 'Influencers',
-      description: 'Showcase your brand, achievements, and content effortlessly. BlueCards is the perfect addition to your social bio.'
+      description: 'Showcase your brand, achievements, and content effortlessly. SpotCard is the perfect addition to your social bio.'
     },
     {
       img: img4,
       header: 'Professionals',
-      description: 'Upgrade from traditional cards to a sleek digital solution. BlueCards represents your expertise with ease and style.'
+      description: 'Upgrade from traditional business cards to a sleek digital solution. SpotCard enhances your professional image with ease and style.'
     },
   ];
 
@@ -39,9 +39,9 @@ export function Card() {
   console.log(theme);
 
   return (
-    <>
-    <h1 className="text-4xl truncate text-amber-300 font-primary font-bold pb-10">Who Needs Digital Visting Card.?</h1>
-    <section className="container flex h-[350px] flex-col w-full gap-4 lg:h-[350px] lg:flex-row">
+<section className="w-full flex flex-col items-center justify-center min-h-fit py-24">
+<h1 className="text-2xl md:text-4xl truncate text-amber-300 font-primary font-bold pb-10">Who Needs Digital Visting Card.?</h1>
+    <div className="container flex min-h-[350px] flex-col w-full gap-4 lg:h-[350px] lg:flex-row">
       {services.map((service, index) => (
         <MagicCard
         key={index}
@@ -53,8 +53,8 @@ export function Card() {
         <h4 className="truncate text-wrap text-[16px]">{service.description}</h4>
       </MagicCard>
       ))}
+    </div>
     </section>
-    </>
   );
 }
 

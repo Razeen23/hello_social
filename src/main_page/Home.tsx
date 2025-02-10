@@ -13,11 +13,13 @@ import { Templates } from '../page/Templates';
 
 import UseCase from '../page/UseCase';
 
+import Pricing from '../page/Pricing';
+
 
 const Home: React.FC = () => {
     return (
         <>
-            <section className='min-h-screen flex flex-col items-center justify-center'>
+            {/* <section id="home" className='min-h-screen flex flex-col items-center justify-center'>
                 <div className='container min-h-[65vh] items-center justify-center flex flex-1'>
                     <DotPattern
                         width={20}
@@ -71,15 +73,16 @@ const Home: React.FC = () => {
                         DEPLOY
                     </div>
                 </div>
-            </section>
+            </section> */}
             <TextRevealDemo />
             <About />
-
-            <Card />
-            <UseCase />
-
             <Work />
+            <Card />
+
+
             <Templates />
+            <UseCase />
+            <Pricing />
             <Benefits />
 
 

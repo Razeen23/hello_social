@@ -1,7 +1,8 @@
 "use client";
-
 import { cn } from "../@/lib/utils";
-import { AnimatedList } from "../@/components/ui/animated-list"; // Adjust the import path as needed
+import { AnimatedList } from "../@/components/ui/animated-list"; 
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 interface Item {
   name: string;
@@ -45,26 +46,31 @@ let notifications = [
     description: "Keep your audience connected with instant updates and interactive features.",
     time: "2m ago",
     icon: "🗞️",
-    color: "#1E86FF",
+    color: "#7143f0",
+  },
+  {
+    name: "Direct Contact in One Click",
+    description: "Let customers call, WhatsApp, or email you instantly without saving your number.",
+    time: "2m ago",
+    icon: "📞",
+    color: "#20993e",
   },
 ];
 
-// notifications = Array.from({ length: 10 }, () => notifications).flat();
-
 const Notification = ({ name, description, icon, color, time }: Item) => {
   return (
-    <figure
+    <motion.figure
       className={cn(
         "relative mx-auto min-h-fit w-full max-w-[700px] cursor-pointer overflow-hidden rounded-2xl p-3",
-        // animation styles
         "transition-all duration-200 ease-in-out hover:scale-[103%]",
-        // light styles
         "bg-black/10 backdrop-blur-md [border:1px_solid_rgba(0,0,0,.05)] [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-        // dark styles
         "transform-gpu dark:bg-transparent dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       )}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="flex flex-row items-center gap-3">
+      <div className="font-secondary flex flex-row items-center gap-3">
         <div
           className="flex size-10 items-center justify-center rounded-2xl"
           style={{
@@ -76,35 +82,29 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
             <span className="text-sm sm:text-lg">{name}</span>
-            {/* <span className="mx-1">·</span> */}
-            {/* <span className="text-xs text-gray-500">{time}</span> */}
           </figcaption>
-          <p className="text-sm font-normal dark:text-white/60">
-            {description}
-          </p>
+          <p className="text-sm font-normal dark:text-white/60">{description}</p>
         </div>
       </div>
-    </figure>
+    </motion.figure>
   );
 };
 
-export function AnimatedListDemo({
-  className,
-}: {
-  className?: string;
-}) {
+export function AnimatedListDemo({ className }: { className?: string }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.2, // Start animation when 20% of the section is visible
+  });
+
   return (
-    <div
-      className={cn(
-        " flex h-[600px] w-full flex-col p-6 overflow-hidden ",
-        className,
+    <div ref={ref} className={cn("flex h-fit w-full flex-col p-6 overflow-hidden", className)}>
+      {inView && ( // Only render animation when inView is true
+        <AnimatedList>
+          {notifications.map((item, idx) => (
+            <Notification {...item} key={idx} />
+          ))}
+        </AnimatedList>
       )}
-    >
-      <AnimatedList>
-        {notifications.map((item, idx) => (
-          <Notification {...item} key={idx} />
-        ))}
-      </AnimatedList>
     </div>
   );
 }

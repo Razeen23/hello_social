@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/vertical-logof_white.png';
 
+
 import { BsArrowUp, BsGeoAlt, BsCapslock, BsCursorFill } from "react-icons/bs";
 
 

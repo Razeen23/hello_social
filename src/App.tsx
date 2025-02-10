@@ -12,14 +12,14 @@ function App() {
     <Router>
     <BorderBeam size={350} duration={12} delay={9} />
     <Header />
-    <div className="App bg-black text-white p-12 ">
+    <div className="App bg-black text-white py-12 ">
       <Routes>
 
         <Route path="/" element={<Home />} />
       </Routes>
 
     </div>
-    <Footer />
+    {/* <Footer /> */}
     
     </Router>
   );

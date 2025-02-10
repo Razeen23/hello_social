@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import logo from '../assets/horizontal-logo-white.png';
 import ShinyButton from "../@/components/magicui/shiny-button";
+import mockup from "../assets/mobile_mockup.png";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+
 
 // Hamburger Component
 const Hamburger = ({ onToggle, checked }: { onToggle: (isOpen: boolean) => void, checked: boolean }) => {
@@ -40,44 +43,75 @@ export const Header = () => {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    setIsMenuOpen(false); // Close menu and reset hamburger
+    setIsMenuOpen(false); // Close menu
   };
 
   return (
     <>
       <nav className="header font-secondary relative">
+        {/* Logo */}
         <motion.div
-          className="flex flex-1 items-start justify-start"
+          className={`flex flex-1 items-start justify-start transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'
+            }`}
           initial={{ x: -400 }}
           animate={{ x: 0 }}
           transition={{ type: 'spring', duration: 4 }}
         >
           <img src={logo} alt="logo" className="logo" />
         </motion.div>
+
+        {/* Contact Button & Hamburger */}
         <div className="flex flex-1 items-end justify-end">
-          <button className="boton-elegante">Contact</button>
+          {/* Hide only Contact button */}
+          <button
+            className={`boton-elegante transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+          >
+            Contact
+          </button>
+          {/* Hamburger Icon */}
           <Hamburger onToggle={setIsMenuOpen} checked={isMenuOpen} />
         </div>
       </nav>
 
+      {/* Fullscreen Navigation */}
       {isMenuOpen && (
         <motion.div
           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 text-white z-50 flex flex-col items-start justify-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 2 }}
+          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <ul className="text-left font-spl3 text-5xl leading-[5rem] font-black ml-12 cursor-pointer">
-            <li><a onClick={() => scrollToSection('home')}>Home</a></li>
-            <li><a onClick={() => scrollToSection('about')}>About</a></li>
-            <li><a onClick={() => scrollToSection('use-case')}>UseCase</a></li>
-            <li><a onClick={() => scrollToSection('templates')}>Templates</a></li>
-            <li><a onClick={() => scrollToSection('benefits')}>Benefits</a></li>
-            <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
-          </ul>
+          <section
+            id="about"
+            className="text-3xl py-10 flex items-center justify-center font-bold"
+          >
+            <div className="flex flex-1 flex-col items-center justify-center">
+              <ul className="text-left font-spl3 text-5xl leading-[5rem] font-black ml-12 cursor-pointer">
+                {[
+                  { id: 'home', label: 'Home' },
+                  { id: 'about', label: 'About' },
+                  { id: 'usecase', label: 'UseCase' },
+                  { id: 'templates', label: 'Templates' },
+                  { id: 'benefits', label: 'Benefits' },
+                  { id: 'contact', label: 'Contact' },
+                ].map(({ id, label }) => (
+                  <motion.li
+                    key={id}
+                    className="flex items-center gap-4 hover:text-amber-300 transition-colors duration-300"
+                    whileHover={{ x: -10 }}
+                  >
+                    <MdOutlineDoubleArrow />
+                    <a onClick={() => scrollToSection(id)}>{label}</a>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-1 items-center justify-center">
+              <img src={logo} className="w-[800px]" alt="" />
+            </div>
+          </section>
         </motion.div>
-        
-
       )}
     </>
   );
