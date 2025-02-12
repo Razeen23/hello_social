@@ -64,6 +64,7 @@ export const Header = () => {
         <div className="flex flex-1 items-end justify-end ">
           {/* Hide only Contact button */}
           <button
+          onClick={() => window.location.href = 'tel:+919345035514'}
             className={`boton-elegante transition-opacity duration-300 hidden sm:block ${isMenuOpen ? 'opacity-0' : 'opacity-100'} `}
           >
             Contact
@@ -94,6 +95,7 @@ export const Header = () => {
                   { id: 'about', label: 'About' },
                   { id: 'usecase', label: 'UseCase' },
                   { id: 'templates', label: 'Templates' },
+                  {id: 'pricing', label: 'Pricing' },
                   { id: 'benefits', label: 'Benefits' },
                   { id: 'contact', label: 'Contact' },
                 ].map(({ id, label }) => (

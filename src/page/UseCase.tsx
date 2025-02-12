@@ -23,7 +23,7 @@ const UseCase = () => {
     });
     return (
         // <div>
-        <section id="usecase" className=' md:container my-10 min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center '>
+        <section className=' md:container my-10 min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center '>
             <div className="relative font-secondary">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 sm:py-6">
                     <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:grid-cols-2 gap-y-12 lg:gap-x-8 items-center">

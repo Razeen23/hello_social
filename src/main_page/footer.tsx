@@ -15,7 +15,7 @@ const Footer = () => {
     };
 
     return (
-        <section className="flex flex-col p-5 bg-black/80 items-center justify-center text-white relative">
+        <section id='contact' className="flex flex-col p-5 bg-black/80 items-center justify-center text-white relative">
             <div className='flex flex-col md:flex-row justify-between w-full p-7'>
                 <div className='flex flex-col py-7 items-center justify-center '>
                     <div className='py-2'>
@@ -36,12 +36,13 @@ const Footer = () => {
                                 <h4 className='text-[15px]'>Our team will get back to you shortly</h4>
                             <div className="relative mt-2">
                                 <input
-                                    type="email"
-                                    placeholder="Email address"
-                                    autoComplete="email"
-                                    aria-label="Email address"
+                                    type="phone"
+                                    placeholder="Phone Number"
+                                    autoComplete="phone"
+                                    aria-label="phone number or whatsapp number"
                                     className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
                                 />
+                                
                                 <div className="absolute inset-y-1 right-1 flex justify-end">
                                     <button
                                         type="submit"

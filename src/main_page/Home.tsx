@@ -17,6 +17,8 @@ import Hero from '../page/Hero';
 import { cn } from "../@/lib/utils";
 import DotPattern from "../@/components/magicui/dot-pattern";
 import BlurFade from "../@/components/magicui/blur-fade";
+
+import Pricingcard from '../page/PriceCard';
 const Home: React.FC = () => {
     return (
         <>
@@ -84,7 +86,8 @@ const Home: React.FC = () => {
 
             <Templates />
             <UseCase />
-            <Pricing />
+            {/* <Pricing /> */}
+            <Pricingcard />
             <Benefits />
 
 
