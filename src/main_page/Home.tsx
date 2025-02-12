@@ -5,17 +5,18 @@ import TextRevealDemo from '../page/TextReveal';
 import About from '../page/About';
 import Card from '../page/Card';
 import Work from '../page/Work';
-import { cn } from "../@/lib/utils";
-import DotPattern from "../@/components/magicui/dot-pattern";
-import BlurFade from "../@/components/magicui/blur-fade";
+
 import Benefits from '../page/Benefits';
 import { Templates } from '../page/Templates';
 
 import UseCase from '../page/UseCase';
 
 import Pricing from '../page/Pricing';
+import Hero from '../page/Hero';
 
-
+import { cn } from "../@/lib/utils";
+import DotPattern from "../@/components/magicui/dot-pattern";
+import BlurFade from "../@/components/magicui/blur-fade";
 const Home: React.FC = () => {
     return (
         <>
@@ -74,6 +75,7 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </section> */}
+            <Hero />
             <TextRevealDemo />
             <About />
             <Work />

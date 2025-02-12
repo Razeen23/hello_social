@@ -57,15 +57,14 @@ export const Header = () => {
           animate={{ x: 0 }}
           transition={{ type: 'spring', duration: 4 }}
         >
-          <img src={logo} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo min-w-[250px]" />
         </motion.div>
 
         {/* Contact Button & Hamburger */}
-        <div className="flex flex-1 items-end justify-end">
+        <div className="flex flex-1 items-end justify-end ">
           {/* Hide only Contact button */}
           <button
-            className={`boton-elegante transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'
-              }`}
+            className={`boton-elegante transition-opacity duration-300 hidden sm:block ${isMenuOpen ? 'opacity-0' : 'opacity-100'} `}
           >
             Contact
           </button>
@@ -87,8 +86,10 @@ export const Header = () => {
             className="text-3xl py-10 flex items-center justify-center font-bold"
           >
             <div className="flex flex-1 flex-col items-center justify-center">
-              <ul className="text-left font-spl3 text-5xl leading-[5rem] font-black ml-12 cursor-pointer">
-                {[
+            <ul className="text-left font-spl3 text-3xl md:text-5xl lg:text-6xl 
+               leading-relaxed md:leading-relaxed lg:leading-relaxed 
+               font-black ml-10 cursor-pointer">
+                                {[
                   { id: 'home', label: 'Home' },
                   { id: 'about', label: 'About' },
                   { id: 'usecase', label: 'UseCase' },
@@ -107,7 +108,7 @@ export const Header = () => {
                 ))}
               </ul>
             </div>
-            <div className="flex flex-1 items-center justify-center">
+            <div className="flex flex-1 hidden sm:block items-center justify-center">
               <img src={logo} className="w-[800px]" alt="" />
             </div>
           </section>

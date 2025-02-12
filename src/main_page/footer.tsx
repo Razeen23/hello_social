@@ -15,22 +15,21 @@ const Footer = () => {
     };
 
     return (
-        <section className="flex flex-col p-5 bg-black/80 text-white relative">
-            <div className='flex justify-between w-full'>
-                <div className='flex flex-col'>
-                    <div className='p-7'>
-                        <h1 className='text-8xl font-primary'>Say Hello</h1>
+        <section className="flex flex-col p-5 bg-black/80 items-center justify-center text-white relative">
+            <div className='flex flex-col md:flex-row justify-between w-full p-7'>
+                <div className='flex flex-col py-7 items-center justify-center '>
+                    <div className='py-2'>
+                        <h1 className= 'text-6xl md:text-8xl font-primary'>Say Hello</h1>
                     </div>
-                    <div className='p-7'>
+                    <div className='py-2'>
                         <img className="w-[200px]" src={logo} alt="" />
-                        <h4 className='pl-7'>© 2024, Hello Social</h4>
                     </div>
                 </div>
 
-                <div className='flex flex-col items-center justify-center'>
+                <div className='flex flex-col items-center justify-center '>
                     <div className='flex items-center space-x-8'>
                         {/* Form and Address Section */}
-                        <div className='flex flex-col items-center text-3xl space-y-6'>
+                        <div className='flex flex-col items-center text-3xl space-y-6 '>
                             {/* Form Section */}
                             <div>
                                 <h2>Get In Touch..</h2>
@@ -76,9 +75,9 @@ const Footer = () => {
                         </div>
 
                         {/* Arrow Icon */}
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-start justify-center">
                             <BsArrowUp
-                                className="text-9xl cursor-pointer arrow-hover"
+                                className="text-sm sm:text-6xl md:text-9xl cursor-pointer arrow-hover"
                                 onClick={handleScrollToTop}
                             />
                         </div>
@@ -86,6 +85,8 @@ const Footer = () => {
                 </div>
 
             </div>
+            <h4 className='pl-7 '>© 2024, Hello Social</h4>
+
 
         </section>
     );

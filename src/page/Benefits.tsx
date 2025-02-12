@@ -51,6 +51,7 @@ export function Work() {
                     </MagicCard>
                 ))}
             </section>
+            
         </div>
     );
 }

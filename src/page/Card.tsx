@@ -41,7 +41,7 @@ export function Card() {
   return (
 <section className="w-full flex flex-col items-center justify-center min-h-fit py-24">
 <h1 className="text-2xl md:text-4xl truncate text-amber-300 font-primary font-bold pb-10">Who Needs Digital Visting Card.?</h1>
-    <div className="container flex min-h-[350px] flex-col w-full gap-4 lg:h-[350px] lg:flex-row">
+    <div className="container sm:mx-2 flex min-h-[350px] flex-col w-full gap-4 lg:h-[350px] lg:flex-row">
       {services.map((service, index) => (
         <MagicCard
         key={index}
