@@ -68,7 +68,7 @@ const pricingPlans = [
 
 const Pricing = () => {
   return (
-    <section className="md:container py-10 bg-white min-h-[70%]">
+    <section className="md:container py-10 bg-white-bg min-h-[70%] ">
       <h1 className="text-5xl truncate text-black font-primary font-bold ">
         Pricing List
       </h1>

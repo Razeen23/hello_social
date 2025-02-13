@@ -79,7 +79,7 @@ const phoneData = [
 
 export function Templates() {
   return (
-    <section id="templates"  className="md:container relative bg-white rounded text-black mt-10">
+    <section id="templates"  className="md:container relative bg-white-bg rounded text-black mt-10">
       <div className="p-10">
       <h1 className="text-4xl  text-black font-primary font-bold p-5 " >
       Explore Our Templates
