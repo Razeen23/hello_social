@@ -39,7 +39,7 @@ export default function BlurFade({
   };
   const combinedVariants = variant || defaultVariants;
   return (
-    <AnimatePresence>
+    // <AnimatePresence>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -55,6 +55,6 @@ export default function BlurFade({
       >
         {children}
       </motion.div>
-    </AnimatePresence>
+    // </AnimatePresence>
   );
 }
