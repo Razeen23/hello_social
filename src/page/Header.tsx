@@ -111,7 +111,7 @@ export const Header = () => {
               </ul>
             </div>
             <div className="flex flex-1 hidden sm:block items-center justify-center">
-              <img src={logo} className="w-[800px]" alt="" />
+              {/* <img src={logo} className="w-[800px]" alt="" /> */}
             </div>
           </section>
         </motion.div>
