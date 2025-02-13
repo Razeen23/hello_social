@@ -48,7 +48,7 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="header font-secondary relative">
+      <nav className="header font-secondary relative bg">
         {/* Logo */}
         <motion.div
           className={`flex flex-1 items-start justify-start transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'
@@ -57,7 +57,7 @@ export const Header = () => {
           animate={{ x: 0 }}
           transition={{ type: 'spring', duration: 4 }}
         >
-          <img src={logo} alt="logo" className="logo min-w-[250px]" />
+          {/* <img src={logo} alt="logo" className="logo min-w-[250px]" /> */}
         </motion.div>
 
         {/* Contact Button & Hamburger */}

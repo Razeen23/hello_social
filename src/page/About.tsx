@@ -4,7 +4,7 @@ import mockup from "../assets/mobile_mockup.png";
 
 const About = () => {
     return (
-        <section id='about' className="container min-h-fit text-3xl py-20 flex flex-wrap flex-colitems-center justify-center font-bold"
+        <section id='about' className="container min-h-fit text-3xl py-20 flex flex-wrap flex-colitems-center justify-center font-bold "
         >
             <div className='flex flex-1 items-center justify-center'>
                 <img src={mockup} className="w-[800px] min-w-[300px] max-w-full" alt="Mockup" />

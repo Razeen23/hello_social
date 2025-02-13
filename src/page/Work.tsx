@@ -9,7 +9,7 @@ const Work = () => {
   });
 
   return (
-    <section id="usecase" ref={ref} className='md:container min-w-[300px] sm:min-w-[450px] min-h-fit bg-white rounded text-black'>
+    <section id="usecase" ref={ref} className='md:container min-w-[300px] sm:min-w-[450px] min-h-fit bg-white-bg rounded text-black'>
       <div className='flex p-3  md:p-8 '>
         <div className='flex heading flex-wrap'>
           <div className='flex flex-1 flex-col uppercase gap-4 text-left items-start justify-center'>

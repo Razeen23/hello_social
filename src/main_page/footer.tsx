@@ -22,7 +22,7 @@ const Footer = () => {
                         <h1 className= 'text-6xl md:text-8xl font-primary'>Say Hello</h1>
                     </div>
                     <div className='py-2'>
-                        <img className="w-[200px]" src={logo} alt="" />
+                        {/* <img className="w-[200px]" src={logo} alt="" /> */}
                     </div>
                 </div>
 

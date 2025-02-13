@@ -50,6 +50,10 @@ module.exports = {
   		}
   	},
   	extend: {
+		backgroundImage: {
+			'black-bg': "url('../src/assets/bg/b-bg1.jpg')",
+			'white-bg': "url('../src/assets/bg/bg1.jpg')",
+		  },
   		colors: {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',

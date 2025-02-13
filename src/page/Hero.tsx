@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative min-h-screen w-full flex flex-col items-center justify-center rounded-lg"
+            className="relative min-h-screen w-full flex flex-col items-center justify-center rounded-lg bg-black"
         >
             {/* Heading */}
             <div className="flex flex-col items-center justify-center mt-[30px] md:mt-[100px]">
@@ -63,6 +63,7 @@ const Hero = () => {
                         maskImage: "linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,1))"
                     }}
                     imageSrc={hero}
+                    
                 />
                 {/* Shadow Outside the Mask */}
                 <div className="absolute inset-0 shadow-[0_-20px_70px_rgba(255,193,8,0.5)] pointer-events-none"></div>
