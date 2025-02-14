@@ -12,7 +12,7 @@ function App() {
     <Router>
     <BorderBeam size={350} duration={12} delay={9} />
     <Header />
-    <div className="App bg-black-bg bg-fixed bg-cover bg-center text-white py-12 ">
+    <div className="App bg-black-bg bg-fixed bg-cover bg-center text-white  ">
       <Routes>
 
         <Route path="/" element={<Home />} />

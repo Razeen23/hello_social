@@ -48,7 +48,7 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="header font-secondary relative bg">
+      <nav className="header font-secondary relative bg-black my-5">
         {/* Logo */}
         <motion.div
           className={`flex flex-1 items-start justify-start transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'

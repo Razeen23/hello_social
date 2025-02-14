@@ -29,8 +29,8 @@ export function Work() {
     const services = servicesGroup();
 
     return (
-        <div id="benefits">
-            <h1 className="text-3xl md:text-4xl text-amber-300 font-primary font-bold p-10">
+        <div id="benefits" className="p-10">
+            <h1 className="text-3xl md:text-4xl text-amber-300 font-primary font-bold pb-10 ">
             Limitless possibilities with just one digital card.
             </h1>
             <section className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

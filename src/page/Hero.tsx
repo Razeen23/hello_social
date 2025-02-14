@@ -11,7 +11,7 @@ const Hero = () => {
             className="relative min-h-screen w-full flex flex-col items-center justify-center rounded-lg bg-black"
         >
             {/* Heading */}
-            <div className="flex flex-col items-center justify-center mt-[30px] md:mt-[100px]">
+            <div className="flex flex-col items-center justify-center mt-[30px] md:mt-[200px]">
                 <motion.h1
                     className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center my-5 leading-tight text-white relative"
                     initial={{ opacity: 0, y: -20 }}
