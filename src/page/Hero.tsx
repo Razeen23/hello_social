@@ -11,7 +11,7 @@ const Hero = () => {
             className="relative min-h-screen w-full flex flex-col items-center justify-center rounded-lg bg-black"
         >
             {/* Heading */}
-            <div className="flex flex-col items-center justify-center mt-[30px] md:mt-[200px]">
+            <div className="flex flex-col items-center justify-center mt-[30px] md:mt-[180px]">
                 <motion.h1
                     className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center my-5 leading-tight text-white relative"
                     initial={{ opacity: 0, y: -20 }}
@@ -33,6 +33,7 @@ const Hero = () => {
                         A Smart, Shareable, and Elegant Digital Business Card
                         <br /> Designed to Make Powerful First Impressions
                     </span>
+
                 </motion.h4>
 
                 <motion.button
@@ -45,6 +46,16 @@ const Hero = () => {
                 >
                     Know More
                 </motion.button>
+                <motion.span
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                    onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+                                     className="bg-clip-text mb-5 text-2xl text-transparent bg-gradient-to-br from-white/80 to-gray-400 drop-shadow-md text-bold">
+                        <br />
+                        V-Card Starting from <span className="text-amber-400 text-3xl"> ₹299</span>
+                    </motion.span>
+                
             </div>
 
             {/* Glowing Effect Wrapper */}
