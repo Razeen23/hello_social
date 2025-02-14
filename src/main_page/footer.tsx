@@ -3,7 +3,7 @@ import logo from '../assets/vertical-logof_white.png';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
-import { BsArrowUp, BsGeoAlt, BsCapslock, BsCursorFill } from "react-icons/bs";
+import { BsArrowUp, BsGeoAlt, BsCapslock, BsCursorFill, BsWhatsapp } from "react-icons/bs";
 
 
 const Footer = () => {
@@ -21,6 +21,7 @@ const Footer = () => {
                 <div className='flex flex-col py-7 items-center justify-center '>
                     <div className='py-2'>
                         <h1 className='text-6xl md:text-8xl font-primary'>Say Hello</h1>
+                        
                     </div>
                     <div className='py-2'>
                         {/* <img className="w-[200px]" src={logo} alt="" /> */}
@@ -75,6 +76,15 @@ const Footer = () => {
                                     </a>
                                     <a href="mailto:info@spotcard.in" className="text-white-800 hover:underline">
                                         info@spotcard.in
+                                    </a>
+                                    <a
+                                        href="https://wa.me/919345035514"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center space-x-2 text-green-500 hover:underline mt-2"
+                                    >
+                                        <BsWhatsapp className="text-2xl" />
+                                        <span>Chat on WhatsApp</span>
                                     </a>
                                 </div>
                             </div>
