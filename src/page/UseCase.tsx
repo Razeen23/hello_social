@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
-import Countup from 'react-countup';
-import { motion } from 'framer-motion';
+// import Countup from 'react-countup';
+// import { motion } from 'framer-motion';
 
 import { FaRegAddressCard } from "react-icons/fa6";
 import { RiSlideshow3Fill, RiProjector2Fill } from "react-icons/ri";
@@ -29,7 +29,7 @@ const UseCase = () => {
                     <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:grid-cols-2 gap-y-12 lg:gap-x-8 items-center">
                         <div className="relative lg:flex lg:flex-col lg:items-start lg:justify-center lg:text-left">
                             <div className="absolute bottom-0 left-0 overflow-hidden lg:inset-y-0">
-                                {/* <img className="w-auto h-full" src={pattern} alt="" /> */}
+                                {/* <img className="w-auto h-full" src={pattern} alt="img" /> */}
                             </div>
                             <div className="text-center  lg:text-left">
                                 <h1 className="text-2xl font-bold leading-tight sm:text-2xl sm:leading-tight lg:leading-tight lg:text-4xl font-primary text-shadow-xl">
@@ -78,8 +78,8 @@ const UseCase = () => {
                             </h3>
                         </div>
                         <div className="relative max-w-full mx-auto lg:ml-auto lg:max-w-[800px]">
-                            {/* <img src={imgSrc2} alt="" /> */}
-                            <img className="w-full" src={vector} alt="" />
+                            {/* <img src={imgSrc2} alt="img" /> */}
+                            <img className="w-full" src={vector} alt="img" />
                         </div>
                     </div>
                 </div>

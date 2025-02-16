@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import logo from '../assets/horizontal-logo-white.png';
-import ShinyButton from "../@/components/magicui/shiny-button";
-import mockup from "../assets/mobile_mockup.png";
+// import logo from '../assets/horizontal-logo-white.png';
+// import ShinyButton from "../@/components/magicui/shiny-button";
+// import mockup from "../assets/mobile_mockup.png";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 
 
@@ -63,12 +63,12 @@ export const Header = () => {
         {/* Contact Button & Hamburger */}
         <div className="flex flex-1 items-end justify-end ">
           {/* Hide only Contact button */}
-          <button
-          onClick={() => window.location.href = 'tel:+919345035514'}
-            className={`boton-elegante transition-opacity duration-300 hidden sm:block ${isMenuOpen ? 'opacity-0' : 'opacity-100'} `}
-          >
-            Contact
-          </button>
+          <a 
+  href="tel:+919345035514"
+  className={`boton-elegante transition-opacity duration-300 hidden sm:block ${isMenuOpen ? 'opacity-0' : 'opacity-100'} `}
+>
+  Call Now
+</a>
           {/* Hamburger Icon */}
           <Hamburger onToggle={setIsMenuOpen} checked={isMenuOpen} />
         </div>
@@ -111,7 +111,7 @@ export const Header = () => {
               </ul>
             </div>
             <div className="flex flex-1 hidden sm:block items-center justify-center">
-              {/* <img src={logo} className="w-[800px]" alt="" /> */}
+              {/* <img src={logo} className="w-[800px]" alt="img" /> */}
             </div>
           </section>
         </motion.div>

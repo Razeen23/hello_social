@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from '../assets/vertical-logof_white.png';
+// import React from 'react';
+// import logo from '../assets/vertical-logof_white.png';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
@@ -24,7 +24,7 @@ const Footer = () => {
                         
                     </div>
                     <div className='py-2'>
-                        {/* <img className="w-[200px]" src={logo} alt="" /> */}
+                        {/* <img className="w-[200px]" src={logo} alt="logo" /> */}
                     </div>
                 </div>
 

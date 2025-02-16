@@ -1,5 +1,5 @@
 import TextReveal from "../@/components/magicui/text-reveal";
-import { Meteors } from "../@/components/ui/meteors"; // Adjust the import path as needed
+// import { Meteors } from "../@/components/ui/meteors"; 
 import RetroGrid from "../@/components/ui/retro-grid";
 
 

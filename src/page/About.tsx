@@ -1,5 +1,5 @@
 import React from 'react';
-import card from '../assets/hellosocial_card_new.png';
+// import card from '../assets/hellosocial_card_new.png';
 import mockup from "../assets/mobile_mockup.png";
 
 const About = () => {

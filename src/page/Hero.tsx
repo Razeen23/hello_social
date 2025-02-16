@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { motion } from "framer-motion";
 import { Particles } from "../@/components/magicui/particles";
 import { Safari } from "../@/components/magicui/safari";

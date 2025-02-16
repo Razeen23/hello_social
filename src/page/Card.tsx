@@ -48,7 +48,7 @@ export function Card() {
         className="cursor-pointer flex flex-col text-left items-center justify-center shadow-2xl p-4 whitespace-normal text-3xl overflow-hidden rounded-xl bg-white/10 dark:bg-black/10"
         gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
       >
-        <img src={service.img} className="w-20 h-20 object-cover mb-2" />
+        <img src={service.img} className="w-20 h-20 object-cover mb-2" alt="img" />
         <h2 className="text-xl truncate text-amber-300 font-secondary font-bold">{service.header}</h2>
         <h4 className="truncate text-wrap text-[16px]">{service.description}</h4>
       </MagicCard>

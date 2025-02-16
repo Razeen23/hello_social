@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView, Variants } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 
 interface BlurFadeProps {
   children: React.ReactNode;
