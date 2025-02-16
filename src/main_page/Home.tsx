@@ -11,12 +11,12 @@ import { Templates } from '../page/Templates';
 
 import UseCase from '../page/UseCase';
 
-import Pricing from '../page/Pricing';
+// import Pricing from '../page/Pricing';
 import Hero from '../page/Hero';
 
-import { cn } from "../@/lib/utils";
-import DotPattern from "../@/components/magicui/dot-pattern";
-import BlurFade from "../@/components/magicui/blur-fade";
+// import { cn } from "../@/lib/utils";
+// import DotPattern from "../@/components/magicui/dot-pattern";
+// import BlurFade from "../@/components/magicui/blur-fade";
 
 import Pricingcard from '../page/PriceCard';
 const Home: React.FC = () => {
