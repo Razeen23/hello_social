@@ -1,0 +1,28 @@
+name: Deploy React App to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Change to your branch if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to cPanel via SSH
+        uses: appleboy/scp-action@master
+        with:
+          host: "spotcard.in"  # Replace with your cPanel domain/IP
+          username: "spotcard"
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "build/*"
+          target: "/home/spotcard/public_html"
