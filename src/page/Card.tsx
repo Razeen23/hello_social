@@ -9,7 +9,7 @@ const servicesGroup = () => {
   const services = [
     {
       img: img1,
-      header: 'Small Business Owners',
+      header: 'Small Business Ownerss',
       description: 'Expand your business online with SpotCard—a simple and professional way to share your services and connect digitally.'
     },
     {
